@@ -1,7 +1,7 @@
-This is some materials of paper "iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing"
+This repository contains supporting materials of the paper "iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing"
 This project will include the following items:
-1. The CAD models of digital model library (done).
-2. The ISOPR Dataset (to be done)
-3. The geometric primitives used in the paper. (done)
+1. The CAD models of a digital model library (done).
+2. The ISOPR Dataset (to be done).
+3. The geometric primitives used in the paper (done).
 
-All the CAD models are in ".stl" formulate and the ISOPR Dataset is a pkl file.
+All the CAD models are in ".stl" format. The ISOPR Dataset is a pkl file.
