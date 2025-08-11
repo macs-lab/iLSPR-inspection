@@ -22,5 +22,5 @@
    You can download this dataset by "git clone https://github.com/macs-lab/iLSPR-inspection.git" in terminal and open the ".pkl" files by "pickle" package in Python.
 
 6. License
-   Our dataset is released under MIL License (see License file for more details)
+   Our dataset is released under MIT License (see License file for more details)
   
