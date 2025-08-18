@@ -1,5 +1,14 @@
 # Supplementary Materials of iLSPR Manuscript
 
+This repository contains supporting materials of the paper "iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing"
+This project includes the following items:
+- 1. the dir named "geometric primitives" stores the geometric primitives used in GPDG method.
+- 2. the dir "digital model library" stores the CAD models of the digital model library.
+- 3. the dir named "ISOPR" store the ISOPR dataset and corresponding documents.
+
+All the CAD models are in ".stl" format. The ISOPR Dataset is a pkl file.
+
+
 ## Catalogue
 - [Introduction of the Manuscript](#introduction-of-the-manuscript)
 - [Industrial Scene Object Point-cloud Registration (ISOPR) dataset](#industrial-scene-object-point-cloud-registration-isopr-dataset)
@@ -8,12 +17,13 @@
 
 ## Introduction of the Manuscript
 
-### Manuscript Title
+### Title
 
 iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Intelligent Manufacturing
 
 ### Authors 
 Yusen Wan, Xu Chen
+Department of Mechanical Engineering, University of Washington, 3900 E Stevens Way NE, Seattle, 98195, Washington, the United States
 
 ### Abstract
 
@@ -22,11 +32,7 @@ and abundant data. However, manufacturing hinges on high object precision and op
 
 
 
-
-### 
-
 ## Industrial Scene Object Point-cloud Registration (ISOPR) dataset
-
 
 ### Background
 
@@ -35,9 +41,13 @@ With the rise of robotic manufacturing, vision-based scene reconstruction method
 ### Introduction
 To simulate the depth camera and generate sensor-realistic point clouds for industrial scene pointcloud registration, we construct the ISOPR Dataset using NVIDIA Isaac Sim simulator, a robotics simulation platform developed on the NVIDIA Omniverse framework.
 
+![text](https://github.com/macs-lab/iLSPR-inspection/Images/sampling.png)
+
 In IsaacSim, We built a robitc manufacturing scene, which consists of a Universal Robot Arm UR10, a semi-enclosed rectangular platform, a depth camera provided by Isaac Sim fixed on the platform, and the workpiece (object). In ISOPR, the resolution of the depth camera is 640×480 pixels, and the horizontal field of view is 30°. The workpieces are selected from the digital model library. Sample workpieces, including various connectors, supporters, and shells, are shown in Figure 2.
 
-Figure shows the process of data collection of ISOPR. The data collection involves the following key steps: (i) place the work-ieces from digital model library randomly within [−0.2m, 0.2m]; (ii) rotate the workpieces randomly within [−45.0◦, 45.0◦]; (iii) capture the point clouds of the whole scene by the depth camera; (iv) segment the point clouds by a predefined bounding box to obtain the point clouds of the workpieces; (v) down-sample the point clouds by voxelization, whose resolution of each sample is selected from {50, 100, 200, 500, 1000, 2000} to make the number of points exceed 1024 while remaining as close as possible, because previous work was developed based on point clouds around 1024. Finally, we obtain 2000 samples for testing. Some samples are shown in Figure.
+![text](https://github.com/macs-lab/iLSPR-inspection/Images/sampling.png)
+
+Figure 1 shows the process of data collection of ISOPR. The data collection involves the following key steps: (i) place the work-ieces from digital model library randomly within [−0.2m, 0.2m]; (ii) rotate the workpieces randomly within [−45.0◦, 45.0◦]; (iii) capture the point clouds of the whole scene by the depth camera; (iv) segment the point clouds by a predefined bounding box to obtain the point clouds of the workpieces; (v) down-sample the point clouds by voxelization, whose resolution of each sample is selected from {50, 100, 200, 500, 1000, 2000} to make the number of points exceed 1024 while remaining as close as possible, because previous work was developed based on point clouds around 1024. Finally, we obtain 2000 samples for testing. Some samples are shown in Figure.
 
 ISOPR can be used to evaluate the point-cloud registration methods. The methods need to align the source point cloud and reference point cloud and estimate the rotation matrixes and translation vectors. Then, compared with the GT value, the performance of methods can be evaluated.
 
@@ -72,10 +82,18 @@ with open('ISOPR_0.pkl', 'rb') as p:
  
 ### License
 
-Our dataset is released under MIT License (see License file for more details)
-
+Our dataset is released under MIT License (see './ISOPR/License.txt' file for more details)
 
 
 ## Geometric Primitives
 
+In mechanical designing and computer-assisted design, geometric primitives are the simplest, irreducible geometric shapes that serve as foundational building blocks for constructing complex 3D models or scenes. Geometric primitives include triangular, quadrangular, pentagonal, hexagonal, heptagonal, and octagonal prisms and pyramids, as well as cylinders, cones, and spheres.
+
+In this manuscript, we generates synthetic part point clouds using a set of geometric primitives, grounded in the engineering design principle that mechanical components are typically constructed through CAD operations—such as Boolean unions, subtractions, and intersections—applied to geometric primitives.
+
+This dir stores the geometric primitives used in our manuscript.
+
+
 ## Digital Model Library
+
+The digital model library stores the ground truth CAD models of each production line’s specific products that serve as the target objects. In our work, we collected 67 CAD models and built the digital model library, which are used to collect ISOPR dataset in IsaacSim and generate authentic point clouds for model training.
