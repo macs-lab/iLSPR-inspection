@@ -41,11 +41,11 @@ With the rise of robotic manufacturing, vision-based scene reconstruction method
 ### Introduction
 To simulate the depth camera and generate sensor-realistic point clouds for industrial scene pointcloud registration, we construct the ISOPR Dataset using NVIDIA Isaac Sim simulator, a robotics simulation platform developed on the NVIDIA Omniverse framework.
 
-![text](https://github.com/macs-lab/iLSPR-inspection/Images/sampling.png)
+![text](https://github.com/macs-lab/iLSPR-inspection/blob/main/Images/gtmodel.png)
 
 In IsaacSim, We built a robitc manufacturing scene, which consists of a Universal Robot Arm UR10, a semi-enclosed rectangular platform, a depth camera provided by Isaac Sim fixed on the platform, and the workpiece (object). In ISOPR, the resolution of the depth camera is 640×480 pixels, and the horizontal field of view is 30°. The workpieces are selected from the digital model library. Sample workpieces, including various connectors, supporters, and shells, are shown in Figure 2.
 
-![text](https://github.com/macs-lab/iLSPR-inspection/Images/sampling.png)
+![text](https://github.com/macs-lab/iLSPR-inspection/blob/main/Images/gtmodel.png)
 
 Figure 1 shows the process of data collection of ISOPR. The data collection involves the following key steps: (i) place the work-ieces from digital model library randomly within [−0.2m, 0.2m]; (ii) rotate the workpieces randomly within [−45.0◦, 45.0◦]; (iii) capture the point clouds of the whole scene by the depth camera; (iv) segment the point clouds by a predefined bounding box to obtain the point clouds of the workpieces; (v) down-sample the point clouds by voxelization, whose resolution of each sample is selected from {50, 100, 200, 500, 1000, 2000} to make the number of points exceed 1024 while remaining as close as possible, because previous work was developed based on point clouds around 1024. Finally, we obtain 2000 samples for testing. Some samples are shown in Figure.
 
