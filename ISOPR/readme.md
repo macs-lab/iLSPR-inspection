@@ -43,6 +43,18 @@ To simulate the depth camera and generate sensor-realistic point clouds for indu
 
 ![text](https://github.com/macs-lab/iLSPR-inspection/blob/main/Images/gtmodel.png)
 
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://github.com/macs-lab/iLSPR-inspection/blob/main/Images/gtmodel.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">gtmodel</div>
+</center>
+
+
 In IsaacSim, We built a robitc manufacturing scene, which consists of a Universal Robot Arm UR10, a semi-enclosed rectangular platform, a depth camera provided by Isaac Sim fixed on the platform, and the workpiece (object). In ISOPR, the resolution of the depth camera is 640×480 pixels, and the horizontal field of view is 30°. The workpieces are selected from the digital model library. Sample workpieces, including various connectors, supporters, and shells, are shown in Figure 2.
 
 ![text](https://github.com/macs-lab/iLSPR-inspection/blob/main/Images/gtmodel.png)
