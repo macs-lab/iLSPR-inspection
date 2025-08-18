@@ -1,4 +1,4 @@
-1. Name: Industrial Scene Object Point-cloud Registration (ISOPR) dataset
+# Name: Industrial Scene Object Point-cloud Registration (ISOPR) dataset
 
 2. Authors: Yusen Wan, Xu Chen
 
