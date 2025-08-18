@@ -1,3 +1,4 @@
+[TOC]
 # Supplementary Materials of iLSPR Manuscript
 
 ### Manuscript Title
@@ -29,12 +30,12 @@ ISOPR can be used to evaluate the point-cloud registration methods. The methods 
 
 The folder contains all data for ISOPR, structured across 5 ".pkl" files. Each file comprises 400 samples, totally 2000 samples. Every sample is stored as a dictionary with the following keys:
 
-   'gt': point cloud of Ground truth CAD model in ndarray. (shape: N1×3)
-   'gt_normal': Normal vectors of the ground truth point cloud in ndarray. (shape: N1×3)
-   'det': Detected point cloud in ndarray. (shape: N2×3)
-   'det_normal': Normal vectors of the detected point cloud in ndarray. (shape: N2×3)
-   'R': Ground truth rotation matrix in ndarray. (shape: 3×3)
-   't': Ground truth translation vector in ndarray. (shape: 3×1)
+&emsp; 'gt': point cloud of Ground truth CAD model in ndarray. (shape: N1×3)
+&emsp;'gt_normal': Normal vectors of the ground truth point cloud in ndarray. (shape: N1×3)
+&emsp;'det': Detected point cloud in ndarray. (shape: N2×3)
+&emsp;'det_normal': Normal vectors of the detected point cloud in ndarray. (shape: N2×3)
+&emsp;'R': Ground truth rotation matrix in ndarray. (shape: 3×3)
+&emsp;'t': Ground truth translation vector in ndarray. (shape: 3×1)
 
 The 'gt' point cloud and the 'det' point cloud can be aligned by: $P_{gt} = RP_{det}+t $.
 
@@ -50,7 +51,7 @@ This dataset can be opened by "pickle" package in Python:
 
 ```
 import pickle as pkl
-with open('ISOPR1.pkl', 'rb') as p:
+with open('ISOPR_0.pkl', 'rb') as p:
     ISOPR = pkl.load(p)
 ``` 
  
