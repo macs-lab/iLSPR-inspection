@@ -25,6 +25,7 @@ iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatia
 
 ### Authors 
 Yusen Wan, Xu Chen
+
 Department of Mechanical Engineering, University of Washington, 3900 E Stevens Way NE, Seattle, 98195, Washington, the United States
 
 ### Abstract
