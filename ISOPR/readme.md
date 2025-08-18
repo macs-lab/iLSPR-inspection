@@ -40,6 +40,7 @@ and abundant data. However, manufacturing hinges on high object precision and op
     color: #999;
     padding: 2px;">Figure 1. Overview of the proposed iLSPR method for precision industrial scene reconstruction and robotic manufacturing. The robotic manufacturing system consists of a robotic manipulator, a workpiece (object), a platform, and an RGB-D camera. While working, the raw point cloud of the scene is captured by an RGB-D camera, and the partial point cloud of the object is segmented from it by a predefined bounding box. Next, iLSPR selects and registers the object’s ground-truth model in the scene. The scene is then reconstructed and can be used as a spatial guide for the robotic manufacturing system.</div>
 </center>
+<br>
 
 ## Industrial Scene Object Point-cloud Registration (ISOPR) dataset
 
@@ -49,7 +50,6 @@ With the rise of robotic manufacturing, vision-based scene reconstruction method
 
 ### Introduction
 To simulate the depth camera and generate sensor-realistic point clouds for industrial scene pointcloud registration, we construct the ISOPR Dataset using NVIDIA Isaac Sim simulator, a robotics simulation platform developed on the NVIDIA Omniverse framework.
-
 
 <center>
     <img style="border-radius: 0.3125em;
@@ -61,7 +61,7 @@ To simulate the depth camera and generate sensor-realistic point clouds for indu
     color: #999;
     padding: 2px;">Figure 2. Process of the data collection process for the ISOPR dataset in IsaacSim.</div>
 </center>
-
+<br>
 
 In IsaacSim, We built a robitc manufacturing scene, which consists of a Universal Robot Arm UR10, a semi-enclosed rectangular platform, a depth camera provided by Isaac Sim fixed on the platform, and the workpiece (object), as shown in Figure 2.. In ISOPR, the resolution of the depth camera is 640×480 pixels, and the horizontal field of view is 30°. The workpieces are selected from the digital model library. Sample workpieces, including various connectors, supporters, and shells, are shown in Figure 3..
 
@@ -75,8 +75,9 @@ In IsaacSim, We built a robitc manufacturing scene, which consists of a Universa
     color: #999;
     padding: 2px;">Figure 3. Example CAD models in the digital model library, involving shells, connectors, supporters, and others.</div>
 </center>
+<br>
 
-Figure 1 shows the process of data collection of ISOPR. The data collection involves the following key steps: (i) place the work-ieces from digital model library randomly within [−0.2m, 0.2m]; (ii) rotate the workpieces randomly within [−45.0◦, 45.0◦]; (iii) capture the point clouds of the whole scene by the depth camera; (iv) segment the point clouds by a predefined bounding box to obtain the point clouds of the workpieces; (v) down-sample the point clouds by voxelization, whose resolution of each sample is selected from {50, 100, 200, 500, 1000, 2000} to make the number of points exceed 1024 while remaining as close as possible, because previous work was developed based on point clouds around 1024. Finally, we obtain 2000 samples for testing. Some samples are shown in Figure 4..
+Figure 2. shows the process of data collection of ISOPR. The data collection involves the following key steps: (i) place the work-ieces from digital model library randomly within [−0.2m, 0.2m]; (ii) rotate the workpieces randomly within [−45.0◦, 45.0◦]; (iii) capture the point clouds of the whole scene by the depth camera; (iv) segment the point clouds by a predefined bounding box to obtain the point clouds of the workpieces; (v) down-sample the point clouds by voxelization, whose resolution of each sample is selected from {50, 100, 200, 500, 1000, 2000} to make the number of points exceed 1024 while remaining as close as possible, because previous work was developed based on point clouds around 1024. Finally, we obtain 2000 samples for testing. Some samples are shown in Figure 4..
 
 <center>
     <img style="border-radius: 0.3125em;
@@ -88,7 +89,7 @@ Figure 1 shows the process of data collection of ISOPR. The data collection invo
     color: #999;
     padding: 2px;">Figure 4. Some examples of the detected point clouds in the ISOPR dataset.</div>
 </center>
-
+<br>
 ISOPR can be used to evaluate the point-cloud registration methods. The methods need to align the source point cloud and reference point cloud and estimate the rotation matrixes and translation vectors. Then, compared with the GT value, the performance of methods can be evaluated.
 
 ### Structure
@@ -143,6 +144,7 @@ This dir stores the geometric primitives used in our manuscript.
     color: #999;
     padding: 2px;">Figure 5. Some examples of the geometric primitives.</div>
 </center>
+<br>
 
 ## Digital Model Library
 
