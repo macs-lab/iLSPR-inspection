@@ -1,4 +1,4 @@
-@[TOC]
+@[toc]
 # Supplementary Materials of iLSPR Manuscript
 
 ### Manuscript Title
