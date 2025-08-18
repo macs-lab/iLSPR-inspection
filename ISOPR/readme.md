@@ -2,9 +2,11 @@
 
 This repository contains supporting materials of the paper "iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing"
 This project includes the following items:
-- 1. the dir named "geometric primitives" stores the geometric primitives used in GPDG method.
-- 2. the dir "digital model library" stores the CAD models of the digital model library.
-- 3. the dir named "ISOPR" store the ISOPR dataset and corresponding documents.
+
+- the dir named "geometric primitives" stores the geometric primitives used in GPDG method.
+- the dir "digital model library" stores the CAD models of the digital model library.
+- the dir named "ISOPR" store the ISOPR dataset and corresponding documents.
+- the dir named "Images" store some example images.
 
 All the CAD models are in ".stl" format. The ISOPR Dataset is a pkl file.
 
@@ -46,7 +48,7 @@ and abundant data. However, manufacturing hinges on high object precision and op
 
 ### Background
 
-With the rise of robotic manufacturing, vision-based scene reconstruction methods have become essential, high-precision reconstruction of manufacturing scenes, particularly target workpieces, has emerged as a cornerstone of robotic intelligence. In the manuscript, we proposed a Learning-based Scene Point-cloud Registration Method for automatic industrial scene reconstruction, which leverages point clouds as 3D representation and can estimate the positions and orientations of workpieces in the industrial scenes. For the experimental evaluation, we conducted Industrial Scene Object Point-cloud Registration (ISOPR) dataset. Because, though there are large datasets (ModelNet40, ABC, and so on) for benchmarking, they lack simulation of authentic depth camera sampling, which means the experimental formulations in the previous literature are unsuitable. 
+With the rise of robotic manufacturing, vision-based scene reconstruction methods have become essential, high-precision reconstruction of manufacturing scenes, particularly target workpieces, has emerged as a cornerstone of robotic intelligence. In the manuscript, we proposed a Learning-based Scene Point-cloud Registration Method for automatic industrial scene reconstruction, which leverages point clouds as 3D representation and can estimate the positions and orientations of workpieces in the industrial scenes. For the experimental evaluation, we conducted Industrial Scene Object Point-cloud Registration (ISOPR) dataset. Because, though there are large datasets (ModelNet40 [1], ABC [2], and so on) for benchmarking, they lack simulation of authentic depth camera sampling, which means the experimental formulations in the previous literature are unsuitable. 
 
 ### Introduction
 To simulate the depth camera and generate sensor-realistic point clouds for industrial scene pointcloud registration, we construct the ISOPR Dataset using NVIDIA Isaac Sim simulator, a robotics simulation platform developed on the NVIDIA Omniverse framework.
@@ -150,3 +152,8 @@ This dir stores the geometric primitives used in our manuscript.
 
 The digital model library stores the ground truth CAD models of each production line’s specific products that serve as the target objects. In our work, we collected 67 CAD models and built the digital model library, which are used to collect ISOPR dataset in IsaacSim and generate authentic point clouds for model training.
 
+## Reference
+
+[1] Z. Wu, S. Song, A. Khosla, et al, 3D Shapenets: A Deep Representation for Volumetric Shapes, in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2015, pp. 1912-1920
+
+[2] S. Koch, A. Matveev, Z. Jiang, et al, (2019). ABC: A Big CAD Model Dataset for Geometric Deep Learning. in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019, pp. 9601-9611
