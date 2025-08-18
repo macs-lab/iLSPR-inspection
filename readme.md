@@ -157,4 +157,4 @@ The digital model library stores the ground truth CAD models of each production 
 
 [1] Z. Wu, S. Song, A. Khosla, et al, 3D Shapenets: A Deep Representation for Volumetric Shapes, in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2015, pp. 1912-1920
 
-[2] S. Koch, A. Matveev, Z. Jiang, et al, (2019). ABC: A Big CAD Model Dataset for Geometric Deep Learning. in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019, pp. 9601-9611
+[2] S. Koch, A. Matveev, Z. Jiang, et al, ABC: A Big CAD Model Dataset for Geometric Deep Learning. in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019, pp. 9601-9611
