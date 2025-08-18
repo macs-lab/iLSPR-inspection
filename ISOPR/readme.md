@@ -1,6 +1,6 @@
-@[toc]
-# Supplementary Materials of iLSPR Manuscript
 
+# Supplementary Materials of iLSPR Manuscript
+@[toc]
 ### Manuscript Title
 
 iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Intelligent Manufacturing
