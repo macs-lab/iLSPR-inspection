@@ -41,18 +41,18 @@ The 'gt' point cloud and the 'det' point cloud can be aligned by: $P_{gt} = RP_{
 
 ### Usage:
 This dataset can be downloaded in terminal by:
-'''
+```
 git clone https://github.com/macs-lab/iLSPR-inspection.git
 cd iLSPR-inspection/ISOPR
-'''
+```
 
 This dataset can be opened by "pickle" package in Python:
 
-'''
+```
 import pickle as pkl
 with open('ISOPR1.pkl', 'rb') as p:
     ISOPR = pkl.load(p)
-''' 
+``` 
  
 ### License
 
