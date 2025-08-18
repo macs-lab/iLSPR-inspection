@@ -1,4 +1,4 @@
-This repository contains supporting materials of the paper "iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing"
+# This repository contains supporting materials of the paper "iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing"
 This project includes the following items:
 1. the dir named "geometric primitives" stores the geometric primitives used in GPDG method.
 2. the dir "digital model library" stores the CAD models of the digital model library.
