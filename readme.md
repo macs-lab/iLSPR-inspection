@@ -1,6 +1,7 @@
 # Supplementary Materials of iLSPR Manuscript
 
-This repository contains supporting materials of the paper "iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing"
+This repository contains supporting materials of the paper "iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing", by Yusen Wan and Xu Chen, Department of Mechanical Engineering, University of Washington, 3900 E Stevens Way NE, Seattle, 98195, Washington, USA.
+
 This project includes the following items:
 
 - the dir named "geometric primitives" stores the geometric primitives used in GPDG method.
@@ -12,26 +13,14 @@ All the CAD models are in ".stl" format. The ISOPR Dataset is a pkl file.
 
 
 ## Catalogue
-- [Introduction of the Manuscript](#introduction-of-the-manuscript)
+- [Introduction](#introduction-of-the-manuscript)
 - [Industrial Scene Object Point-cloud Registration (ISOPR) dataset](#industrial-scene-object-point-cloud-registration-isopr-dataset)
 - [Geometric Primitives](#geometric-primitives)
 - [Digital Model Library](#digital-model-library)
 
-## Introduction of the Manuscript
+## Introduction
 
-### Title
-
-iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Intelligent Manufacturing
-
-### Authors 
-Yusen Wan, Xu Chen
-
-Department of Mechanical Engineering, University of Washington, 3900 E Stevens Way NE, Seattle, 98195, Washington, the United States
-
-### Abstract
-
-A critical capability for intelligent manufacturing is the ability for robotic systems to understand the spatial operation environment – the ability for robots to precisely recognize and estimate the spatial positions and orientations of objects in the industrial scenes. Existing scene reconstruction methods are designed for general settings with low precision needs of objects
-and abundant data. However, manufacturing hinges on high object precision and operates with limited data. Addressing such challenges and limitations, we propose a novel learning-based Scene Point-cloud Registration framework for automatic industrial scene reconstruction (iLSPR). The proposed iLSPR framework leverages point cloud representation and integrates three key innovations: (i) a Multi-Feature Robust Point Matching Network (MF-RPMN) that learn from both raw data and deep features of the objects to accurately align point clouds, (ii) a Geometric-Primitive-based Data Generation (GPDG) method for efficient synthetic data generation, and (iii) a digital model library of industrial target objects. During operation, vision sensors capture point clouds in the scenes, and the iLSPR method registers high-fidelity object models in the scenes using MF-RPMN, pre-trained with GPDG-generated data. We introduce an Industrial Scene Object Pointcloud Registration (ISOPR) dataset in IsaacSim to benchmark performance. Experimental results demonstrate that iLSPR significantly outperforms existing methods in accuracy and robustness. We further validate the approach on a real-world robotic manufacturing system, demonstrating reliable digital reconstruction of industrial scenes.
+A critical capability for intelligent manufacturing is the ability for robotic systems to understand the spatial operation environment – the ability for robots to precisely recognize and estimate the spatial positions and orientations of objects in the industrial scenes. Existing scene reconstruction methods are designed for general settings with low precision needs of objects and abundant data. However, manufacturing hinges on high object precision and operates with limited data. Addressing such challenges and limitations, we propose a novel learning-based Scene Point-cloud Registration framework for automatic industrial scene reconstruction (iLSPR). The proposed iLSPR framework leverages point cloud representation and integrates three key innovations: (i) a Multi-Feature Robust Point Matching Network (MF-RPMN) that learn from both raw data and deep features of the objects to accurately align point clouds, (ii) a Geometric-Primitive-based Data Generation (GPDG) method for efficient synthetic data generation, and (iii) a digital model library of industrial target objects. During operation, vision sensors capture point clouds in the scenes, and the iLSPR method registers high-fidelity object models in the scenes using MF-RPMN, pre-trained with GPDG-generated data. We introduce an Industrial Scene Object Pointcloud Registration (ISOPR) dataset in IsaacSim to benchmark performance. Experimental results demonstrate that iLSPR significantly outperforms existing methods in accuracy and robustness. We further validate the approach on a real-world robotic manufacturing system, demonstrating reliable digital reconstruction of industrial scenes.
 
 <center>
     <img style="border-radius: 0.3125em;
