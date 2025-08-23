@@ -1,4 +1,4 @@
-# Supplementary Materials of iLSPR Manuscript
+# iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing
 
 This repository contains supporting materials of the paper "iLSPR: A Learning-based Scene Point-cloud Registration Method for Robotic Spatial Awareness in Industrial Manufacturing", by Yusen Wan and Xu Chen, Department of Mechanical Engineering, University of Washington, 3900 E Stevens Way NE, Seattle, 98195, Washington, USA.
 
